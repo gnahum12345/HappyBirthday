@@ -118,7 +118,7 @@ body {
 }
 
 .six img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -126,7 +126,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
+  top: -100px;
   left: 50.5%;
   /* transform: scale(0.1); */
 }
@@ -220,7 +220,7 @@ body {
 .wish h5 {
   font-weight: lighter;
   font-size: 2rem;
-  margin: 10px 0 0;
+  margin: 40px 0 0;
 }
 
 .nine p {
