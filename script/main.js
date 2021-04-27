@@ -13,8 +13,7 @@ const animationTimeline = () => {
     .join("</span><span>")}</span`;
 
   const audio = document.getElementById("soundtrack");
-  audio.play();
-
+  document.body.addEventListener('mousemove', () => audio.play());
   const ideaTextTrans = {
     opacity: 0,
     y: -20,
@@ -312,9 +311,4 @@ const resolveFetch = () => {
   });
 };
 
-resolveFetch();
-
-const buttonOnClick = () => {
-  document.getElementById('buttonContainer').setAttribute('display', 'none');
-  animationTimeline();
-}
+resolveFetch().then(animationTimeline())
