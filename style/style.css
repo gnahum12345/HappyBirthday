@@ -126,9 +126,9 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -100px;
+  top: 135px;
   left: 50.5%;
-  /* transform: scale(0.1); */
+  transform: rotate(50deg) scale(0.6); 
 }
 
 .baloons img {
