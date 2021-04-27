@@ -12,6 +12,11 @@ const animationTimeline = () => {
     .split("")
     .join("</span><span>")}</span`;
 
+  const audio = document.getElementById("soundtrack");
+  document.body.addEventListener("mousemove", function () {
+    audio.play()
+  });
+
   const ideaTextTrans = {
     opacity: 0,
     y: -20,
