@@ -262,6 +262,10 @@ const animationTimeline = () => {
       zIndex: "-1"
     })
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .to(".nine strong", 1, {
+      backgroundColor: "rgb(33, 44, 74)",
+      color: "#F2CA3F"
+    }, 1.2)
     .to(
       ".last-smile",
       0.5,
