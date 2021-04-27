@@ -114,8 +114,8 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
       scale: 1.2,
       x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
-      color: "#fff"
+      backgroundColor: "rgb(33, 44, 74)",
+      color: "#F2CA3F"
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
@@ -271,9 +271,6 @@ const animationTimeline = () => {
       },
       "+=1"
     );
-
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
