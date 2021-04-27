@@ -1,8 +1,6 @@
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
-  const audio = new Audio("sound/22.mp3"); 
-  audio.play();   
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -27,7 +25,7 @@ const animationTimeline = () => {
     rotationY: 5,
     skewX: "-15deg"
   };
-  
+
   const tl = new TimelineMax();
 
   tl
@@ -267,14 +265,17 @@ const animationTimeline = () => {
       },
       "+=1"
     );
-  
+
   // tl.seek("currentStep");
   // tl.timeScale(2);
-  
+
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
+    audio.pause();
+    audio.currentTime = 0;
     tl.restart();
+    audio.play();
   });
 };
 
@@ -301,6 +302,7 @@ const fetchData = () => {
 const resolveFetch = () => {
   return new Promise((resolve, reject) => {
     fetchData();
+
     resolve("Fetch done!");
   });
 };
