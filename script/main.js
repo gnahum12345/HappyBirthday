@@ -311,8 +311,4 @@ const resolveFetch = () => {
   });
 };
 
-window.onload = () => {
-  document.getElementById("soundtrack").play();
-}
-
 resolveFetch().then(animationTimeline());
